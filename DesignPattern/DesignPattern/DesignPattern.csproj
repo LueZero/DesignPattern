@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DesignPattern\AbstractFactory\" />
+    <Folder Include="AbstractFactory\" />
   </ItemGroup>
 
 </Project>
