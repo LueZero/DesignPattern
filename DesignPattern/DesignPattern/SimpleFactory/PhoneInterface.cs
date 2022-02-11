@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPattern.DesignPattern.SimpleFactory
+namespace DesignPattern.SimpleFactory
 {
     public interface PhoneInterface
     {

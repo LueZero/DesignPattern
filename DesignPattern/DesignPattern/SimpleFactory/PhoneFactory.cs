@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPattern.DesignPattern.SimpleFactory
+namespace DesignPattern.SimpleFactory
 {
     public static class PhoneFactory
     {
@@ -15,7 +15,7 @@ namespace DesignPattern.DesignPattern.SimpleFactory
             switch (brand)
             {
                 case "apple":
-                    phone = new ApplePhone();
+                    phone = new Apple();
                     break;
 
                 case "samsung":
