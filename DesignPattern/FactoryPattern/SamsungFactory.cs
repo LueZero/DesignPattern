@@ -8,7 +8,7 @@ namespace DesignPattern.FactoryPattern
 {
     public class SamsungFactory : PhoneFactoryInterface
     {
-        public ProductInterface Brand()
+        public ProductInterface GetProdcut()
         {
             Console.WriteLine("三星手機");
             return new Samsung();
