@@ -12,13 +12,13 @@ namespace DesignPattern.FactoryPattern
         {
             Console.WriteLine("工廠模式測試");
 
-            PhoneFactoryInterface AppleFactory = new AppleFactory();
-            ProductInterface Apple = AppleFactory.GetProdcut();
-            Console.WriteLine(Apple.GetBrand());
+            PhoneFactoryInterface appleFactory = new AppleFactory();
+            ProductInterface apple = appleFactory.GetProdcut();
+            Console.WriteLine(apple.GetBrand());
 
-            PhoneFactoryInterface SamsungFactory = new SamsungFactory();
-            ProductInterface Samsung = SamsungFactory.GetProdcut();
-            Console.WriteLine(Samsung.GetBrand());
+            PhoneFactoryInterface samsungFactory = new SamsungFactory();
+            ProductInterface samsung = samsungFactory.GetProdcut();
+            Console.WriteLine(samsung.GetBrand());
         }
     }
 }
