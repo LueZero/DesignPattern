@@ -8,7 +8,7 @@ namespace DesignPattern.SimpleFactory
 {
     public class Test
     {
-        public void test()
+        public void Tests()
         {
             Console.WriteLine("簡單工廠測試");
 

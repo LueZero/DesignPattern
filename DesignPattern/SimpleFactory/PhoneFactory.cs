@@ -8,25 +8,25 @@ namespace DesignPattern.SimpleFactory
 {
     public static class PhoneFactory
     {
-        static PhoneInterface phone;
+        static PhoneInterface _phone;
 
         public static PhoneInterface GetPhone(string brand)
         {
             switch (brand)
             {
                 case "apple":
-                    phone = new Apple();
+                    _phone = new Apple();
                     break;
 
                 case "samsung":
-                    phone = new Samsung();
+                    _phone = new Samsung();
                     break;
 
                 default:
                     throw new Exception("missing matching brand name");
             }
 
-            return phone;
+            return _phone;
         }
     }
 }

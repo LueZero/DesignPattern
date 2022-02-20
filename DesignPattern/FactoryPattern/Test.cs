@@ -8,7 +8,7 @@ namespace DesignPattern.FactoryPattern
 {
     public class Test
     {
-        public void test()
+        public void Tests()
         {
             Console.WriteLine("工廠模式測試");
 

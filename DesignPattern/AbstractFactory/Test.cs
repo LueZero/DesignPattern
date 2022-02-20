@@ -8,7 +8,7 @@ namespace DesignPattern.AbstractFactory
 {
     class Test
     {
-        public void test()
+        public void Tests()
         {
             Console.WriteLine("抽象工廠測試");
 
