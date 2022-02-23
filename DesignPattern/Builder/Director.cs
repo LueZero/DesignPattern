@@ -8,18 +8,18 @@ namespace DesignPattern.Builder
 {
     public class Director
     {
-        private BuilderInterface _builder;
+        private BuilderInterface _Builder;
 
-        public void setBuilder(BuilderInterface builder)
+        public void SetBuilder(BuilderInterface builder)
         {
-            _builder = builder;
+            _Builder = builder;
         }
 
-        public void constructMobilePhone()
+        public void ConstructMobilePhone()
         {
-            _builder.reset();
-            _builder.setSystem();
-            _builder.setPassword();
+            _Builder.Reset();
+            _Builder.SetSystem();
+            _Builder.SetPassword();
         }
     }
 }

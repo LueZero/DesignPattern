@@ -8,12 +8,12 @@ namespace DesignPattern.Builder
 {
     public class AppleManual
     {
-        public void setSystem()
+        public void SetSystem()
         {
 
         }
 
-        public void setPassword()
+        public void SetPassword()
         {
 
         }

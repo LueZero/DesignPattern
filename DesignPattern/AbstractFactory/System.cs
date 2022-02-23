@@ -8,27 +8,27 @@ namespace DesignPattern.AbstractFactory
 {
     public class System
     {
-        private GUIFactoryInterface _gui;
+        private GUIFactoryInterface _Gui;
 
-        private ButtonInterface _button;
+        private ButtonInterface _Button;
 
-        private CheckboxInterface _checkbox;
+        private CheckboxInterface _Checkbox;
 
         public System(GUIFactoryInterface gui)
         {
-            _gui = gui;
+            _Gui = gui;
         }
 
         public void CreateUI()
         {
-            _button = _gui.CreateButton();
-            _checkbox = _gui.CreateCheckbox();
+            _Button = _Gui.CreateButton();
+            _Checkbox = _Gui.CreateCheckbox();
         }
 
         public void Paint()
         {
-            _button.Paint();
-            _checkbox.Paint();
+            _Button.Paint();
+            _Checkbox.Paint();
         }
     }
 }

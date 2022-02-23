@@ -10,17 +10,17 @@ namespace DesignPattern.Builder
     {
         public void Tests()
         {
-            Console.WriteLine("生成器模式測試");
+            Console.WriteLine("建造者模式測試");
 
             Director director = new Director();
 
-            BuilderInterface applebuilder = new AppleBuilder();
-            director.setBuilder(applebuilder);
-            director.constructMobilePhone();
+            BuilderInterface appleBuilder = new AppleBuilder();
+            director.SetBuilder(appleBuilder);
+            director.ConstructMobilePhone();
 
-            BuilderInterface applemanualBuilder = new AppleManualBuilder();
-            director.setBuilder(applemanualBuilder);
-            director.constructMobilePhone();
+            BuilderInterface appleManualBuilder = new AppleManualBuilder();
+            director.SetBuilder(appleManualBuilder);
+            director.ConstructMobilePhone();
         }
     }
 }

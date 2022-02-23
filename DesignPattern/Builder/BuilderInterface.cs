@@ -8,10 +8,10 @@ namespace DesignPattern.Builder
 {
     public interface BuilderInterface
     {
-        public void reset();
+        public void Reset();
 
-        public void setSystem();
+        public void SetSystem();
 
-        public void setPassword();
+        public void SetPassword();
     }
 }
