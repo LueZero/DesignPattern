@@ -8,21 +8,21 @@ namespace DesignPattern.Builder
 {
     public class AppleBuilder : BuilderInterface
     {
-        private Apple _Apple;
+        private Apple _apple;
 
         public void Reset()
         {
-            _Apple = new Apple();
+            _apple = new Apple();
         }
 
         public void SetSystem()
         {
-            _Apple.SetSystem();
+            _apple.SetSystem();
         }
 
         public void SetPassword()
         {
-            _Apple.SetPassword();
+            _apple.SetPassword();
         }
     }
 }
