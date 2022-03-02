@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace DesignPattern.Prototype
 {
-    class Test
+    public class Test
     {
         public void Tests()
         {
+            Console.WriteLine("原型模式測試");
+
             var apple = new Apple();
             apple.Manufacturer = "美國科技製造商";
 

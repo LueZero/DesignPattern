@@ -10,7 +10,7 @@ namespace DesignPattern.AbstractFactory
     {
         public void Tests()
         {
-            Console.WriteLine("抽象工廠測試");
+            Console.WriteLine("抽象工廠模式測試");
 
             GUIFactoryInterface win = new WinFactory();
 

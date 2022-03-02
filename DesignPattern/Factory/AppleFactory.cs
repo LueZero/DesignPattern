@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPattern.FactoryPattern
+namespace DesignPattern.Factory
 {
-    public class SamsungFactory : PhoneFactoryInterface
+    public class AppleFactory : PhoneFactoryInterface
     {
         public ProductInterface GetProdcut()
         {
-            Console.WriteLine("三星手機");
-            return new Samsung();
+            Console.WriteLine("蘋果手機");
+            return new Apple();
         }
     }
 }
