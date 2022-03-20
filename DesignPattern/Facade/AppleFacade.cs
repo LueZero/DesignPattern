@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace DesignPattern.Facade
 {
-    class Test
+    class AppleFacade
     {
-        public void Tests()
+        public static ProductionInterface MakeApplePhone()
         {
-            Console.WriteLine("外觀模式測試");
+            var apple = new Apple();
 
-            var apple = AppleFacade.MakeApplePhone();
+            return apple.Set().Make().Check();
         }
     }
 }
