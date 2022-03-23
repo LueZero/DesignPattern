@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPattern.Factory
+namespace DesignPattern.FactoryMethod
 {
-    public interface PhoneFactoryInterface
+    public abstract class ModelFactory
     {
-        public ProductInterface GetProdcut();
+        public abstract ProductInterface CreateModel();
     }
 }

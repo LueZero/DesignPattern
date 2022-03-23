@@ -13,7 +13,7 @@ namespace DesignPattern.Facade
             return this;
         }
 
-        public ProductionInterface Manufacture()
+        public ProductionInterface Make()
         {
             return this;
         }

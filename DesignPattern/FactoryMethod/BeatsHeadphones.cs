@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPattern.Factory
+namespace DesignPattern.FactoryMethod
 {
-    public class Samsung : ProductInterface
+    class BeatsHeadphones : ProductInterface
     {
         public string GetBrand()
         {
-            return "Samsung";
+            return "Beats";
         }
     }
 }

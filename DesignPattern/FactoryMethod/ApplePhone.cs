@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPattern.Factory
+namespace DesignPattern.FactoryMethod
 {
-    public class Apple : ProductInterface
+    public class ApplePhone : ProductInterface
     {
         public string GetBrand()
         {
