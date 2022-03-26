@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPattern.FactoryMethod
 {
-    public class SamsungFactory : ModelFactory
+    public class SamsungFactory : ProductFactory
     {
         public override ProductInterface CreateModel()
         {

@@ -19,19 +19,19 @@ namespace DesignPattern.FactoryMethod
             Console.WriteLine(model.GetBrand());
         }
 
-        private ModelFactory CreateProduct(string brand)
+        private ProductFactory CreateProduct(string brand)
         {
-            ModelFactory model = null;
+            ProductFactory model = null;
 
             switch(brand)
             {
-                case "Apple":
+                case "apple":
                     model = new AppleFactory();
                     break;
-                case "Samsung":
+                case "samsung":
                     model =  new SamsungFactory();
                     break;
-                case "Beats":
+                case "beats":
                     model = new BeatsFactory();
                     break;
             }

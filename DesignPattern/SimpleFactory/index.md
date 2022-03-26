@@ -124,7 +124,7 @@ public class Phone {
     }
 }
 
-* 最後員工可以輸入品來找尋要批發手機產品
+* 最後員工可以輸入品牌來批發手機產品
 
 static void Main(string[] args)
 {

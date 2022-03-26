@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPattern.FactoryMethod
 {
-    public abstract class ModelFactory
+    public abstract class ProductFactory
     {
         public abstract ProductInterface CreateModel();
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPattern.FactoryMethod
 {
-    public class AppleFactory : ModelFactory
+    public class AppleFactory : ProductFactory
     {
         public override ProductInterface CreateModel()
         {
