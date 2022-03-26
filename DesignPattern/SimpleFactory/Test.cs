@@ -10,7 +10,7 @@ namespace DesignPattern.SimpleFactory
     {
         public void Tests()
         {
-            Console.WriteLine("簡單工廠測試");
+            Console.WriteLine("簡單工廠模式測試");
 
             PhoneInterface apple = PhoneFactory.GetPhone("apple");
             apple.Photo();

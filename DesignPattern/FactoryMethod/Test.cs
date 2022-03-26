@@ -10,7 +10,7 @@ namespace DesignPattern.FactoryMethod
     {
         public void Tests()
         {
-            Console.WriteLine("工廠方法測試");
+            Console.WriteLine("工廠方法模式測試");
 
             var modelFactory = CreateProduct("Apple");
 
