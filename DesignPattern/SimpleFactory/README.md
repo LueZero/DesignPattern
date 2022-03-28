@@ -10,15 +10,15 @@
 
 ## 範例
 
-> 假設你是一間手機批發公司，而使用批發軟體去批發蘋果手機產品，如下類別
+> 假設你是一間手機批發公司，使用軟體去批發蘋果手機產品，如下類別
 
 ```C#
 
 public class Phone {
 
-    public string GetApplePhone(string name)
+    public void WholesaleApplePhone(string name)
     {
-        return "apple phone";
+        Console.WriteLine("批發蘋果手機");
     }
 }
 
@@ -30,14 +30,14 @@ public class Phone {
 
 public class Phone {
 
-    public string GetApplePhone(string name)
+    public string WholesaleApplePhone(string name)
     {
-        return "Apple Phone";
+        Console.WriteLine("批發蘋果手機");
     }
 
-    public string GetSamsungPhone(string name)
+    public string WholesaleSamsungPhone(string name)
     {
-        return "Samsung Phone";
+        Console.WriteLine("批發三星手機");
     }
 }
 
@@ -58,7 +58,7 @@ public interface ProductInterface
 
 * 實作蘋果手機
 
-public class Apple : ProductInterface
+public class ApplePhone : ProductInterface
 {
     public void Wholesale()
     {
@@ -68,7 +68,7 @@ public class Apple : ProductInterface
 
 * 實作三星手機
 
-public class Samsung : ProductInterface
+public class SamsungPhone : ProductInterface
 {
     public void Wholesale()
     {
@@ -87,11 +87,11 @@ public static class PhoneFactory
         switch (brand)
         {
             case "Apple":
-                s_phone = new Apple();
+                s_phone = new ApplePhone();
                 break;
 
             case "Samsung":
-                s_phone = new Samsung();
+                s_phone = new SamsungPhone();
                 break;
 
             default:
@@ -116,9 +116,9 @@ public class Phone {
 
 static void Main(string[] args)
 {
-    var phone = Phone.CreatePhone("Apple");
-    phone.Wholesale();
+    var applePhone = Phone.CreatePhone("Apple");
+    applePhone.Wholesale();
 }
 ```
 
-以上為簡單工廠模式範例，Phone類別減少了改變的機會，但創建產品(品牌)類別依然常常需要變更。
+以上為簡單工廠模式範例，Phone類別減少了改變的機會，但創建產品類別依然常常需要變更。

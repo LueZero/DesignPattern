@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace DesignPattern.SimpleFactory
 {
-    public class Apple : ProductInterface
+    public class SamsungPhone : ProductInterface
     {
         public void Wholesale()
         {
-            Console.WriteLine("批發蘋果手機");
+            Console.WriteLine("批發三星手機");
         }
     }
 }

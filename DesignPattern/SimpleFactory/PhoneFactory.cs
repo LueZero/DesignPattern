@@ -15,11 +15,11 @@ namespace DesignPattern.SimpleFactory
             switch (brand)
             {
                 case "Apple":
-                    s_phone = new Apple();
+                    s_phone = new ApplePhone();
                     break;
 
                 case "Samsung":
-                    s_phone = new Samsung();
+                    s_phone = new SamsungPhone();
                     break;
 
                 default:
