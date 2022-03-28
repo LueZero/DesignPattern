@@ -56,9 +56,9 @@ public class BeatsFactory : ProductFactory
 
 public class Product {
 
-    private static ModelFactory CreateProduct(string brand)
+    private static ProductFactory CreateProduct(string brand)
     {
-        ModelFactory model = null;
+        ProductFactory model = null;
 
         switch(brand)
         {
