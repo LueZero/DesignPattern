@@ -12,13 +12,11 @@ namespace DesignPattern.SimpleFactory
         {
             Console.WriteLine("簡單工廠模式測試");
 
-            PhoneInterface apple = PhoneFactory.GetPhone("apple");
-            apple.Photo();
-            apple.Music();
+            ProductInterface apple = PhoneFactory.CreatePhone("Apple");
+            apple.Wholesale();
 
-            PhoneInterface samsung = PhoneFactory.GetPhone("samsung");
-            samsung.Photo();
-            samsung.Music();
+            ProductInterface samsung = PhoneFactory.CreatePhone("Samsung");
+            samsung.Wholesale();
         }
     }
 }

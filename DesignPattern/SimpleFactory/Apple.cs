@@ -6,16 +6,11 @@ using System.Threading.Tasks;
 
 namespace DesignPattern.SimpleFactory
 {
-    public class Apple : PhoneInterface
+    public class Apple : ProductInterface
     {
-        public void Photo()
+        public void Wholesale()
         {
-            Console.WriteLine("蘋果照相");
-        }
-
-        public void Music()
-        {
-            Console.WriteLine("蘋果音樂");
+            Console.WriteLine("批發蘋果手機");
         }
     }
 }

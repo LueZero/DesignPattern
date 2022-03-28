@@ -8,7 +8,7 @@ namespace DesignPattern.FactoryMethod
 {
     public class BeatsFactory : ProductFactory
     {
-        public override ProductInterface CreateModel()
+        public override ProductInterface CreateProduct()
         {
             return new BeatsHeadphones();
         }

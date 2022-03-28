@@ -49,42 +49,30 @@ Example :
 
 ```C#
 
-* 定義手機的介面
+* 定義產品的介面
 
-public interface PhoneInterface
+public interface ProductInterface
 {
-    public void Photo();
-
-    public void Music();
+    public void Wholesale();
 }
 
 * 實作蘋果手機
 
-public class Apple : PhoneInterface
+public class Apple : ProductInterface
 {
-    public void Photo()
+    public void Wholesale()
     {
-        Console.WriteLine("蘋果照相");
-    }
-
-    public void Music()
-    {
-        Console.WriteLine("蘋果音樂");
+        Console.WriteLine("批發蘋果手機");
     }
 }
 
 * 實作三星手機
 
-public class Samsung : PhoneInterface
+public class Samsung : ProductInterface
 {
-    public void Photo()
+    public void Wholesale()
     {
-        Console.WriteLine("三星照相");
-    }
-
-    public void Music()
-    {
-        Console.WriteLine("三星音樂");
+        Console.WriteLine("批發三星手機");
     }
 }
 
@@ -92,17 +80,17 @@ public class Samsung : PhoneInterface
 
 public static class PhoneFactory
 {
-    private static PhoneInterface s_phone;
+    private static ProductInterface s_phone;
 
-    public static PhoneInterface CreatePhone(string brand)
+    public static ProductInterface CreatePhone(string brand)
     {
         switch (brand)
         {
-            case "apple":
+            case "Apple":
                 s_phone = new Apple();
                 break;
 
-            case "samsung":
+            case "Samsung":
                 s_phone = new Samsung();
                 break;
 
@@ -118,17 +106,18 @@ public static class PhoneFactory
 
 public class Phone {
 
-    public static PhoneInterface GtPhone(string name)
+    public static ProductInterface CreatePhone(string name)
     {
         return PhoneFactory.CreatePhone(name);
     }
 }
 
-* 最後員工可以輸入品牌來批發手機產品
+* 最後員工可以輸入品牌來開始批發手機產品
 
 static void Main(string[] args)
 {
-    var phone = Phone.GtPhone("apple");
+    var phone = Phone.CreatePhone("Apple");
+    phone.Wholesale();
 }
 ```
 

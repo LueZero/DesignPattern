@@ -6,16 +6,11 @@ using System.Threading.Tasks;
 
 namespace DesignPattern.SimpleFactory
 {
-    public class Samsung : PhoneInterface
+    public class Samsung : ProductInterface
     {
-        public void Photo()
+        public void Wholesale()
         {
-            Console.WriteLine("三星照相");
-        }
-
-        public void Music()
-        {
-            Console.WriteLine("三星音樂");
+            Console.WriteLine("批發三星手機");
         }
     }
 }

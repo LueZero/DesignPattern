@@ -11,9 +11,9 @@
 
 ## 範例
 
-> 一樣是批發公司需求。當公司越來越厲害，老闆想增加耳機產品來繼續擴大事業。
+> 一樣是批發需求。當公司越來越厲害，老闆想增加耳機產品來繼續擴大事業。
 
-此時你會發現，原本的簡單手機工廠，從一開始都是手機，到耳機邏輯越來越複雜。常常會碰觸到開放封閉原則，所以我們可以使用工廠方法來處理此問題。
+此時你會發現，原本的簡單手機工廠，從一開始都是手機，到耳機加入後你會發現邏輯變得越來越複雜。且常常會碰觸到開放封閉原則，所以我們可以使用工廠方法模式來處理此問題。
 
 ```C#
 
@@ -21,14 +21,14 @@
 
 public abstract class ProductFactory
 {
-    public abstract ProductInterface CreateModel();
+    public abstract ProductInterface CreateProduct();
 }
 
-* 實作蘋果/三星手機工廠
+* 實作蘋果/三星工廠
 
 public class AppleFactory : ProductFactory
 {
-    public override ProductInterface CreateModel()
+    public override ProductInterface CreateProduct()
     {
         return new ApplePhone();
     }
@@ -36,17 +36,17 @@ public class AppleFactory : ProductFactory
 
 public class SamsungFactory : ProductFactory
 {
-    public override ProductInterface CreateModel()
+    public override ProductInterface CreateProduct()
     {
         return new SamsungPhone();
     }
 }
 
-* 加入耳機工廠
+* 加入Beats工廠
 
 public class BeatsFactory : ProductFactory
 {
-    public override ProductInterface CreateModel()
+    public override ProductInterface CreateProduct()
     {
         return new BeatsHeadphones();
     }
@@ -56,7 +56,7 @@ public class BeatsFactory : ProductFactory
 
 public class Product {
 
-    private static ProductFactory CreateProduct(string brand)
+    private static ProductFactory CreateProductFactory(string brand)
     {
         ProductFactory model = null;
 
@@ -78,11 +78,15 @@ public class Product {
 
 }
 
-* 最後員工可以輸入品牌來批發各式各樣產品
+* 最後員工可以輸入品牌來開始批發產品
 
 static void Main(string[] args)
 {
-    var phone = Product.CreateProduct("apple");
+    var modelFactory = Product.CreateProductFactory("Apple");
+
+    var product = modelFactory.CreateProduct();
+
+    product.Wholesale();
 }
 
 ```

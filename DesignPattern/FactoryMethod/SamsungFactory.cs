@@ -8,7 +8,7 @@ namespace DesignPattern.FactoryMethod
 {
     public class SamsungFactory : ProductFactory
     {
-        public override ProductInterface CreateModel()
+        public override ProductInterface CreateProduct()
         {
             return new SamsungPhone();
         }

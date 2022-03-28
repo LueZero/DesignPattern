@@ -8,6 +8,6 @@ namespace DesignPattern.FactoryMethod
 {
     public abstract class ProductFactory
     {
-        public abstract ProductInterface CreateModel();
+        public abstract ProductInterface CreateProduct();
     }
 }

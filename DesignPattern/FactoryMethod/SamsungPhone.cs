@@ -8,9 +8,9 @@ namespace DesignPattern.FactoryMethod
 {
     public class SamsungPhone : ProductInterface
     {
-        public string GetBrand()
+        public void Wholesale()
         {
-            return "Samsung";
+            Console.WriteLine("Samsung");
         }
     }
 }

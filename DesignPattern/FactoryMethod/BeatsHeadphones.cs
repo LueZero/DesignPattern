@@ -8,9 +8,9 @@ namespace DesignPattern.FactoryMethod
 {
     class BeatsHeadphones : ProductInterface
     {
-        public string GetBrand()
+        public void Wholesale()
         {
-            return "Beats";
+            Console.WriteLine("Beats");
         }
     }
 }

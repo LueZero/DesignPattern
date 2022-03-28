@@ -8,6 +8,6 @@ namespace DesignPattern.FactoryMethod
 {
     public interface ProductInterface
     {
-        string GetBrand();
+        void Wholesale();
     }
 }

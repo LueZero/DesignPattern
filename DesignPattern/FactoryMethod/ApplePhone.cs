@@ -8,9 +8,9 @@ namespace DesignPattern.FactoryMethod
 {
     public class ApplePhone : ProductInterface
     {
-        public string GetBrand()
+        public void Wholesale()
         {
-            return "Apple";
+           Console.WriteLine("Apple");
         }
     }
 }

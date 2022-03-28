@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace DesignPattern.SimpleFactory
 {
-    public interface PhoneInterface
+    public interface ProductInterface
     {
-        public void Photo();
-
-        public void Music();
+        public void Wholesale();
     }
 }

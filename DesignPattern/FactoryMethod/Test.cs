@@ -12,26 +12,26 @@ namespace DesignPattern.FactoryMethod
         {
             Console.WriteLine("工廠方法模式測試");
 
-            var modelFactory = CreateProduct("Apple");
+            var modelFactory = CreateProductFactory("Apple");
 
-            var model = modelFactory.CreateModel();
+            var product = modelFactory.CreateProduct();
 
-            Console.WriteLine(model.GetBrand());
+            product.Wholesale();
         }
 
-        private ProductFactory CreateProduct(string brand)
+        private ProductFactory CreateProductFactory(string brand)
         {
             ProductFactory model = null;
 
             switch(brand)
             {
-                case "apple":
+                case "Apple":
                     model = new AppleFactory();
                     break;
-                case "samsung":
+                case "Samsung":
                     model =  new SamsungFactory();
                     break;
-                case "beats":
+                case "Beats":
                     model = new BeatsFactory();
                     break;
             }
