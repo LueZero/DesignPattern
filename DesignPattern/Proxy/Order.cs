@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 
 namespace DesignPattern.Proxy
 {
-    class Test
+    public class Order
     {
-        public void Tests()
+        public string Read(string orderNumber)
         {
-            Console.WriteLine("代理模式測試");
+            if(orderNumber == "123456")
+                return "訂單結果";
 
-            var orderProxy = new OrderProxy();
-
-            orderProxy.Read("123456");
+            return "";
         }
     }
 }
