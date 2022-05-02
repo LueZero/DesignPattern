@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <Folder Include="Bridge\Example_2\" />
-    <Folder Include="Iterator\" />
+    <Folder Include="Mediator\" />
   </ItemGroup>
 
 </Project>

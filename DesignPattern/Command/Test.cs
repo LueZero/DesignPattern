@@ -16,7 +16,7 @@ namespace DesignPattern.Command
             var b = new BCustomerSservice();
 
             var checkoutCommand = new CheckoutCommand(a);
-            var refundCommand = new RefundCommand($b);
+            var refundCommand = new RefundCommand(b);
 
             checkoutCommand.Execute();
             refundCommand.Execute();
