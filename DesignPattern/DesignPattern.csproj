@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <Folder Include="Bridge\Example_2\" />
-    <Folder Include="Observer\" />
+    <Folder Include="State\" />
   </ItemGroup>
 
 </Project>
