@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <Folder Include="Bridge\Example_2\" />
-    <Folder Include="Strategy\" />
+    <Folder Include="Template\" />
   </ItemGroup>
 
 </Project>
