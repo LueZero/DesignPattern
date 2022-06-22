@@ -12,6 +12,6 @@ namespace DesignPattern.Facade
 
         public ProductionInterface Make();
 
-        public ProductionInterface Check();
+        public string Check();
     }
 }

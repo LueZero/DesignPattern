@@ -8,7 +8,7 @@ namespace DesignPattern.Facade
 {
     class AppleFacade
     {
-        public static ProductionInterface MakeApplePhone()
+        public static string MakeApplePhone()
         {
             var apple = new Apple();
 

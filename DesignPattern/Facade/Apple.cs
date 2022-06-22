@@ -8,7 +8,7 @@ namespace DesignPattern.Facade
 {
     class Apple : ProductionInterface
     {
-        public ProductionInterface Check()
+        public ProductionInterface Set()
         {
             return this;
         }
@@ -18,9 +18,9 @@ namespace DesignPattern.Facade
             return this;
         }
 
-        public ProductionInterface Set()
+        public string Check()
         {
-            return this;
+            return "OK";
         }
     }
 }
