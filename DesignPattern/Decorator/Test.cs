@@ -10,7 +10,7 @@ namespace DesignPattern.Decorator
     {
         public void Tests()
         {
-            Console.WriteLine("裝飾模式測試");
+            Console.WriteLine("裝飾者模式測試");
 
             // 我買了個蘋果手機
             Apple phone = new Apple();
@@ -34,8 +34,8 @@ namespace DesignPattern.Decorator
 
             // 抽象構件（Phone）角色：給出一個抽象介面，以規範準備接受附加責任的物件。
             // 具體構件（AppPhone）角色：定義一個將要接收附加責任的類。
-            // 裝飾（Decorator）角色：持有一個構件（Component）物件的例項，並定義一個與抽象構件介面一致的介面。
-            // 具體裝飾（Sticker和Accessories）角色：負責給構件物件 ”貼上“附加的責任。
+            // 裝飾者（Decorator）角色：持有一個構件（Component）物件的例項，並定義一個與抽象構件介面一致的介面。
+            // 具體裝飾者（Sticker和Accessories）角色：負責給構件物件 ”貼上“附加的責任。
             // 參考:https://dotblogs.com.tw/daniel/2018/04/09/102242
         }
     }
