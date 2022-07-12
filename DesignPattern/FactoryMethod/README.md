@@ -78,10 +78,14 @@ public class Product {
     }
 
 }
+```
 
+> 測試結果
+
+```C#
 * 最後員工可以輸入品牌來開始批發產品
 
-static void Main(string[] args)
+public static void Main(string[] args)
 {
     var modelFactory = Product.CreateProductFactory("Apple");
 
@@ -89,7 +93,6 @@ static void Main(string[] args)
 
     product.Wholesale();
 }
-
 ```
 
 以上為工廠方法模式範例，是非常遵守開放封閉原則，當新增產品時，僅需要新增產品類別以及創建類別。當修改原本產品時，只需要修改產品類別，不會去影響其他產品類別。

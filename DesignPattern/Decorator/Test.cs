@@ -32,11 +32,11 @@ namespace DesignPattern.Decorator
             Accessories applePhoneWithAccessoriesAndSticker = new Accessories(sticker);
             applePhoneWithAccessoriesAndSticker.Print();
 
-            //抽象構件（Phone）角色：給出一個抽象介面，以規範準備接受附加責任的物件。
-            //具體構件（AppPhone）角色：定義一個將要接收附加責任的類。
-            //裝飾（Dicorator）角色：持有一個構件（Component）物件的例項，並定義一個與抽象構件介面一致的介面。
-            //具體裝飾（Sticker和Accessories）角色：負責給構件物件 ”貼上“附加的責任。
-            //參考:https://dotblogs.com.tw/daniel/2018/04/09/102242
+            // 抽象構件（Phone）角色：給出一個抽象介面，以規範準備接受附加責任的物件。
+            // 具體構件（AppPhone）角色：定義一個將要接收附加責任的類。
+            // 裝飾（Decorator）角色：持有一個構件（Component）物件的例項，並定義一個與抽象構件介面一致的介面。
+            // 具體裝飾（Sticker和Accessories）角色：負責給構件物件 ”貼上“附加的責任。
+            // 參考:https://dotblogs.com.tw/daniel/2018/04/09/102242
         }
     }
 }

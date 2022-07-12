@@ -19,7 +19,7 @@
 > 蘋果公司生產情境。
 
 ```C#
-class Apple
+public class Apple
 {
     public Apple Set()
     {
@@ -41,10 +41,9 @@ class Apple
 
 > 當老闆發現，作業員都必須要知道生產流程。對作業員不是那麼友善，希望能改善。
 
-
-定義Apple生產介面
-
 ```C#
+* 定義Apple生產介面
+
 public interface ProductionInterface
 {
     public ProductionInterface Set();
@@ -54,7 +53,7 @@ public interface ProductionInterface
     public string Check();
 }
 
-class Apple : ProductionInterface
+public class Apple : ProductionInterface
 {
     public ProductionInterface Set()
     {
@@ -73,10 +72,10 @@ class Apple : ProductionInterface
 }
 ```
 
-接下來製作Apple外觀器來讓作業員方便使用。
+> 接下來製作Apple外觀器來讓作業員方便使用。
 
 ```C#
-class AppleFacade
+public class AppleFacade
 {
     public static string MakeApplePhone()
     {
@@ -87,10 +86,10 @@ class AppleFacade
 }
 ```
 
-最後來請作業員使用
+> 測試結果
 
 ```C#
-static void Main(string[] args)
+public static void Main(string[] args)
 {
     var apple = AppleFacade.MakeApplePhone();
 }

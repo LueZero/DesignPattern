@@ -20,9 +20,6 @@ namespace DesignPattern.Decorator
             AddSticker();
         }
 
-        /// <summary>
-        /// 新的行為方法
-        /// </summary>
         public void AddSticker()
         {
             Console.WriteLine("現在蘋果手機有貼膜了");

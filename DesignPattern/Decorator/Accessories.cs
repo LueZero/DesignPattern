@@ -6,9 +6,6 @@ using System.Threading.Tasks;
 
 namespace DesignPattern.Decorator
 {
-    /// <summary>
-    /// 手機掛件
-    /// </summary>
     public class Accessories : Decorator
     {
         public Accessories(PhoneAbstract phone) : base(phone)
@@ -23,9 +20,6 @@ namespace DesignPattern.Decorator
             AddAccessories();
         }
 
-        /// <summary>
-        /// 新的行為方法
-        /// </summary>
         public void AddAccessories()
         {
             Console.WriteLine("現在蘋果手機有漂亮的掛件了");

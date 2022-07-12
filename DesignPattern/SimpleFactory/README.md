@@ -45,7 +45,7 @@ public class Phone {
 
 ```
 
-此時你會發現Phone類別會一直增加方法，且看起都是相同的事情。另外這樣修改會改變既有程式碼。也會違反開放封閉原則。接著我們將創造物件與物件本身任務分離。
+> 此時你會發現Phone類別會一直增加方法，且看起都是相同的事情。另外這樣修改會改變既有程式碼。也會違反開放封閉原則。接著我們將創造物件與物件本身任務分離。
 
 Example :
 
@@ -113,10 +113,14 @@ public class Phone {
         return PhoneFactory.CreatePhone(name);
     }
 }
+```
 
+> 測試結果
+
+```C#
 * 最後員工可以輸入品牌來開始批發手機產品
 
-static void Main(string[] args)
+public static void Main(string[] args)
 {
     var applePhone = Phone.CreatePhone("Apple");
     applePhone.Wholesale();
