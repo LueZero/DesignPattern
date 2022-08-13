@@ -8,7 +8,7 @@ namespace DesignPattern.Proxy
 {
     public class OrderProxy
     {
-        protected List<OrderCached> Cached = new List<OrderCached>();
+        protected List<OrderCached> CachedList = new List<OrderCached>();
 
         protected Order Order;
 
@@ -19,14 +19,14 @@ namespace DesignPattern.Proxy
 
         public string Read(string orderNumber)
         {
-            if(Cached.Count(s=>s.OrderNumber == orderNumber) > 0)
+            if(CachedList.Count(s=>s.OrderNumber == orderNumber) > 0)
             {
-                return Cached.Where(s => s.OrderNumber == orderNumber).Select(s => s.OrderContent).FirstOrDefault();
+                return CachedList.Where(s => s.OrderNumber == orderNumber).Select(s => s.OrderContent).FirstOrDefault();
             }
 
             var result = Order.Read(orderNumber);
 
-            Cached.Add(new OrderCached()
+            CachedList.Add(new OrderCached()
             {
                 OrderNumber = orderNumber,
                 OrderContent = result,

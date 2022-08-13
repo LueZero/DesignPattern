@@ -28,11 +28,11 @@ namespace DesignPattern.Strategy
         {
             Console.WriteLine("Run: Sorting data using the strategy (not sure how it'll do it)");
 
-            var result = this._strategy.DoAlgorithm(new List<string> { "a", "b", "c", "d", "e" });
+            var list = this._strategy.DoAlgorithm(new List<string> { "a", "b", "c", "d", "e" });
 
             string resultStr = string.Empty;
 
-            foreach (var element in result as List<string>)
+            foreach (var element in list as List<string>)
             {
                 resultStr += element + ",";
             }

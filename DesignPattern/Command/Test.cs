@@ -12,8 +12,8 @@ namespace DesignPattern.Command
         {
             Console.WriteLine("命令模式測試");
 
-            var a = new ACustomerSservice();
-            var b = new BCustomerSservice();
+            var a = new ACustomerService();
+            var b = new BCustomerService();
 
             var checkoutCommand = new CheckoutCommand(a);
             var refundCommand = new RefundCommand(b);

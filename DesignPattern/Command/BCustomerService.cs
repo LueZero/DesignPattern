@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPattern.Command
 {
-    public class ACustomerSservice : Order
+    public class BCustomerService : Order
     {
     }
 }
