@@ -22,7 +22,7 @@ namespace DesignPattern.State
 
         public void SetGuestState()
         {
-             state = guestState;
+            state = guestState;
         }
 
         public void SetMemberState()

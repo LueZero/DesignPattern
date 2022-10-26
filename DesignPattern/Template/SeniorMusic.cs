@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace DesignPattern.Template
 {
-    class JuniorMusice : BasicMusice
+    class SeniorMusic : BasicMusic
     {
         protected override string Editing()
         {
-            return "編輯初階音樂風格";
+            return "編輯高級音樂風格";
         }
     }
 }

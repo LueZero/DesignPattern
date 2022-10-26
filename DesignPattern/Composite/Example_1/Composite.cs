@@ -38,9 +38,9 @@ namespace DesignPattern.Composite
             Console.WriteLine(this.Name);
 
             // 向下遍歷
-            foreach (Component compontent in _children)
+            foreach (Component component in _children)
             {
-                compontent.Show(depth + 1);
+                component.Show(depth + 1);
             }
         }
     }

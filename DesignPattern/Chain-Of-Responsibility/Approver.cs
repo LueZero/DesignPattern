@@ -17,6 +17,6 @@ namespace DesignPattern.Chain_Of_Responsibility
             this.Name = name;
         }
 
-        public abstract void RefundRequest(Refund requeset);
+        public abstract void RefundRequest(Refund request);
     }
 }

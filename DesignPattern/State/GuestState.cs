@@ -10,9 +10,9 @@ namespace DesignPattern.State
     {
         protected Order order;
 
-        const string Licence = "Guest";
+        const string License = "Guest";
 
-        const string OorderNumber = "20220530-001";
+        const string OrderNumber = "20220530-001";
 
         public GuestState(Order order)
         {

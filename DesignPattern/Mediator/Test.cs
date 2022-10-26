@@ -16,7 +16,7 @@ namespace DesignPattern.Mediator
             Samsung samsung = new Samsung();
             new MessageMediator(apple, samsung);
 
-            Console.WriteLine("Client triggets operation Samsung.");
+            Console.WriteLine("Client triggers operation Samsung.");
             apple.Push();
 
             Console.WriteLine();

@@ -8,13 +8,13 @@ namespace DesignPattern.State
 {
     public abstract class State
     {
-        const string Licence = "Undefined";
+        const string License = "Undefined";
 
-        const string OorderNumber = "Undefined";
+        const string OrderNumber = "Undefined";
 
         public string GetLicense()
         {
-            return OorderNumber;
+            return OrderNumber;
         }
 
         public abstract void Register();

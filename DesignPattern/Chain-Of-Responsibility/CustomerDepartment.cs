@@ -10,11 +10,11 @@ namespace DesignPattern.Chain_Of_Responsibility
     {
         public CustomerDepartment(string name) : base(name) { }
 
-        public override void RefundRequest(Refund requeset)
+        public override void RefundRequest(Refund request)
         {
-            if (requeset.Day < 8)
+            if (request.Day < 8)
             {
-                Console.WriteLine("客服部 {0} 審批 {1} 請假", this.Name, requeset.OrderNumber);
+                Console.WriteLine("客服部 {0} 審批 {1} 請假", this.Name, request.OrderNumber);
             }
             else
             {

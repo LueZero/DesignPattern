@@ -12,11 +12,11 @@ namespace DesignPattern.Template
         {
             Console.WriteLine("樣板模式測試");
 
-            var seniorMusice =  new SeniorMusice();
+            var seniorMusice =  new SeniorMusic();
 
             Console.WriteLine(seniorMusice.Make());
 
-            var juniorMusice = new JuniorMusice();
+            var juniorMusice = new JuniorMusic();
 
             Console.WriteLine(juniorMusice.Make());
         }

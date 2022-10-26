@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPattern.Template
 {
-    abstract class BasicMusice
+    abstract class BasicMusic
     {
         public string Make()
         {

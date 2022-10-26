@@ -10,9 +10,9 @@ namespace DesignPattern.State
     {
         protected Order order;
 
-        const string Licence = "Member";
+        const string License = "Member";
 
-        const string OorderNumber = "20220530-002";
+        const string OrderNumber = "20220530-002";
 
         public MemberState(Order order)
         {

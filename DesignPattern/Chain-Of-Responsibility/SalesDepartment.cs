@@ -10,15 +10,15 @@ namespace DesignPattern.Chain_Of_Responsibility
     {
         public SalesDepartment(string name) : base(name) { }
 
-        public override void RefundRequest(Refund requeset)
+        public override void RefundRequest(Refund request)
         {
-            if (requeset.Day < 15)
+            if (request.Day < 15)
             {
-                Console.WriteLine("銷售部 {0} 審批 {1} 請假", this.Name, requeset.OrderNumber);
+                Console.WriteLine("銷售部 {0} 審批 {1} 請假", this.Name, request.OrderNumber);
             }
             else
             {
-                NextApprover.RefundRequest(requeset);
+                NextApprover.RefundRequest(request);
             }
         }
     }
