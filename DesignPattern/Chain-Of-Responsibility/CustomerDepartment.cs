@@ -18,7 +18,7 @@ namespace DesignPattern.Chain_Of_Responsibility
             }
             else
             {
-                NextApprover.RefundRequest(requeset);
+                NextApprover.RefundRequest(request);
             }
         }
     }
