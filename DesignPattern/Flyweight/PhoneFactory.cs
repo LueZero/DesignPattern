@@ -10,7 +10,7 @@ namespace DesignPattern.Flyweight
     {
         private List<Tuple<Phone, string>> _phones = new List<Tuple<Phone, string>>();
 
-        public PhoneInterface GetPhone(string name)
+        public IPhone GetPhone(string name)
         {
             if(_phones.Where(s => s.Item2 ==  name).Count() == 0)
             {

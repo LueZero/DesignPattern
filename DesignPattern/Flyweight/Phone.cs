@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPattern.Flyweight
 {
-    public class Phone : PhoneInterface
+    public class Phone : IPhone
     {
         public string Name { get; set; }
 
