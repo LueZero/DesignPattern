@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPattern.Command
 {
-    public class RefundCommand : Command
+    public class RefundCommand : ICommand
     {
         protected Order Order;
 

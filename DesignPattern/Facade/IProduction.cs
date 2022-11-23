@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace DesignPattern.Facade
 {
-    public interface ProductionInterface
+    public interface IProduction
     {
-        public ProductionInterface Set();
+        public IProduction Set();
 
-        public ProductionInterface Make();
+        public IProduction Make();
 
         public string Check();
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPattern.Command
 {
-    public class CheckoutCommand : Command
+    public class CheckoutCommand : ICommand
     {
         protected Order Order;
 

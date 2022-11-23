@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace DesignPattern.Facade
 {
-    class Apple : ProductionInterface
+    class Apple : IProduction
     {
-        public ProductionInterface Set()
+        public IProduction Set()
         {
             return this;
         }
 
-        public ProductionInterface Make()
+        public IProduction Make()
         {
             return this;
         }
