@@ -4,13 +4,13 @@
 
 ## 優點：
 
-* 動態重用寫好的類別方法時，裝飾者可用組合去帶繼承的一種解決方案。
-* 職責分明。
+* 動態重用寫好的類別方法時，裝飾者可用組合去帶繼承的一種解決方案
+* 職責分明
 
 ## 缺點：
 
-* 複雜度提高。
-* 方法不依賴執行順序時，無法使用此模式。
+* 複雜度提高
+* 方法不依賴執行順序時，無法使用此模式
 
 ## 範例
 
@@ -53,7 +53,7 @@ public class Sticker : Apple
 
 ```
 
-> 測試一下
+> 測試一下。
 
 ```C#
 public static void Main(string[] args)
@@ -153,7 +153,7 @@ public class Sticker : Decorator
 }
 ```
 
-> 測試結果
+> 測試結果。
 
 ```C#
 public static void Main(string[] args)

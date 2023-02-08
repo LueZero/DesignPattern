@@ -4,18 +4,17 @@
 
 ## 優點：
 
-* 符合單一職責原則。
+* 符合單一職責原則
 
 ## 缺點：
 
-* 當新增、修改產品時，無法遵守開放封閉原則。
+* 當新增、修改產品時，無法遵守開放封閉原則
 
 ## 範例
 
-> 假設你是一間手機批發公司，使用軟體去批發蘋果手機產品，如下類別。
+> 假設你是一間手機批發公司，使用軟體去批發蘋果手機產品，如下類別:
 
 ```C#
-
 public class Phone {
 
     public void WholesaleApplePhone(string name)
@@ -23,13 +22,11 @@ public class Phone {
         Console.WriteLine("批發蘋果手機");
     }
 }
-
 ```
 
 > 但突然有一天老闆想增加三星手機進來，如下類別。
 
 ```C#
-
 public class Phone {
 
     public string WholesaleApplePhone(string name)
@@ -42,15 +39,13 @@ public class Phone {
         Console.WriteLine("批發三星手機");
     }
 }
-
 ```
 
-> 此時你會發現Phone類別會一直增加方法，且看起都是相同的事情。另外這樣修改會改變既有程式碼。也會違反開放封閉原則。接著我們將創造物件與物件本身任務分離。
+> 此時你會發現 Phone 類別會一直增加方法，且看起都是相同的事情。另外這樣修改會改變既有程式碼。也會違反開放封閉原則。接著我們將創造物件與物件本身任務分離。
 
-Example :
+Example:
 
 ```C#
-
 * 定義產品的介面
 
 public interface ProductInterface
@@ -115,7 +110,7 @@ public class Phone {
 }
 ```
 
-> 測試結果
+> 測試結果。
 
 ```C#
 * 最後員工可以輸入品牌來開始批發手機產品
@@ -127,4 +122,4 @@ public static void Main(string[] args)
 }
 ```
 
-以上為簡單工廠模式範例，Phone類別減少了改變的機會，但創建產品類別依然常常需要變更。
+以上為簡單工廠模式範例，Phone 類別減少了改變的機會，但創建產品類別依然常常需要變更。
