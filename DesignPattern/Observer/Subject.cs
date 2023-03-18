@@ -8,24 +8,24 @@ namespace DesignPattern.Observer
 {
     abstract class Subject
     {
-        protected List<Observer> observers;
+        protected List<Observer> Observers;
 
         public void AttachObserver(Observer observer)
         {
-            observers.Add(observer);
+            Observers.Add(observer);
         }
 
         public void DetachObserver(Observer observer)
         {
-            var index =  observers.Where(s=>s == observer);
+            var index = Observers.Where(s=>s == observer);
 
             if (index.Count() >= 0)
-                observers.Remove(observer);
+                Observers.Remove(observer);
         }
 
         public void NotifyObservers()
         {
-            foreach (var observer in observers) {
+            foreach (var observer in Observers) {
                 observer.Update();
             }
         }

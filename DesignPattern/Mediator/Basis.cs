@@ -8,16 +8,16 @@ namespace DesignPattern.Mediator
 {
     public class Basis
     {
-        protected MediatorInterface _mediator;
+        protected MediatorInterface Mediator;
 
         public Basis(MediatorInterface mediator = null)
         {
-            this._mediator = mediator;
+            this.Mediator = mediator;
         }
 
         public void SetMediator(MediatorInterface mediator)
         {
-            this._mediator = mediator;
+            this.Mediator = mediator;
         }
     }
 }

@@ -10,7 +10,7 @@ namespace DesignPattern.Mediator
     {
         public void Push()
         {
-            this._mediator.Notify(this, "Apple");
+            this.Mediator.Notify(this, "Apple");
         }
     }
 }

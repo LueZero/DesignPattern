@@ -8,36 +8,36 @@ namespace DesignPattern.State
 {
     public class Order
     {
-        protected State state;
+        protected State State;
 
-        protected State guestState;
+        protected State GuestState;
 
-        protected State memberState;
+        protected State MemberState;
 
         public Order()
         {
-            guestState = new GuestState(this);
-            memberState = new MemberState(this);
+            GuestState = new GuestState(this);
+            MemberState = new MemberState(this);
         }
 
         public void SetGuestState()
         {
-            state = guestState;
+            State = GuestState;
         }
 
         public void SetMemberState()
         {
-            state = memberState;
+            State = MemberState;
         }
 
         public void Update()
         {
-            state.Update();
+            State.Update();
         }
 
         public void Register()
         {
-            state.Register();
+            State.Register();
         }
     }
 }

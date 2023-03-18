@@ -8,11 +8,11 @@ namespace DesignPattern.Bridge.Example_1
 {
     public abstract class Bag
     {
-        protected ColorInterface color;
+        protected ColorInterface Color;
 
         public void setColor(ColorInterface color)
         {
-            this.color = color;
+            this.Color = color;
         }
 
         public abstract string GetName();

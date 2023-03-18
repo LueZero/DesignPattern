@@ -10,7 +10,7 @@ namespace DesignPattern.Bridge.Example_1
     {
         public override string GetName()
         {
-            return color.getColor() + "Backpack";
+            return Color.getColor() + "Backpack";
         }
     }
 }

@@ -8,7 +8,7 @@ namespace DesignPattern.State
 {
     class MemberState : State
     {
-        protected Order order;
+        protected Order Oorder;
 
         const string License = "Member";
 
@@ -16,7 +16,7 @@ namespace DesignPattern.State
 
         public MemberState(Order order)
         {
-            this.order = order;
+            this.Oorder = order;
         }
 
         public override void Register()
@@ -26,8 +26,8 @@ namespace DesignPattern.State
 
         public override void Update()
         {
-            order.SetMemberState();
-            order.Update();
+            Oorder.SetMemberState();
+            Oorder.Update();
         }
     }
 }

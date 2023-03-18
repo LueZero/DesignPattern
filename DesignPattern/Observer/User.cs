@@ -8,11 +8,11 @@ namespace DesignPattern.Observer
 {
     class User : Observer
     {
-        protected string name;
+        protected string Name;
 
         public User(string name)
         {
-            this.name = name;
+            this.Name = name;
         }
 
         public override void Update()
