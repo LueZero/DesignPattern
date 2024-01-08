@@ -21,24 +21,24 @@ namespace DesignPattern.SOLID.SRP
                 if (shippingName == "黑貓")
                 {
                     var tCat = new TCat();
-                    tCat.CalculateShippingCharges();
+                    tCat.CalculateFreight();
                 }
                 else if (shippingName == "郵寄")
                 {
                     var post = new Post();
-                    post.CalculateShippingCharges();
+                    post.CalculateFreight();
                 }
             }
         }
            
         public interface Shipping
         {
-            public void CalculateShippingCharges();
+            public void CalculateFreight();
         }
 
         public class TCat : Shipping
         {
-            public void CalculateShippingCharges()
+            public void CalculateFreight()
             {
                 //TODO
             }
@@ -46,7 +46,7 @@ namespace DesignPattern.SOLID.SRP
 
         public class Post : Shipping
         {
-            public void CalculateShippingCharges()
+            public void CalculateFreight()
             {
                 //TODO
             }

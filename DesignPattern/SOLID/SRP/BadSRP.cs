@@ -16,10 +16,10 @@ namespace DesignPattern.SOLID.SRP
 
             void Checkout()
             {
-                CalculateShippingCharges();
+                CalculateFreight();
             }
 
-            void CalculateShippingCharges()
+            void CalculateFreight()
             {
                 var shippingName = "黑貓"; 
 
